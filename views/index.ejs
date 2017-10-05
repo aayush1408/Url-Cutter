@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UrlShortner</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheet/style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page-header" id="heading">
+            <h3>URL-SHORTER</h3>
+        </div>
+    </div>
+    <div class="container">
+        <form action="/addurl" method="post" class="form-group">
+        <label>Add url</label>
+        <input type="text" name="link" class="form-control" placeholder="Enter your url.."><br>
+        <input type="submit" value="Shorten" class="btn btn-md btn-primary">
+    </form>
+    </div>
+    <div class="container">
+        <h4><%= title %></h4>
+        <p><%= shortlink %></p>
+    </div>
+    
+</body>
+</html>
